@@ -1,0 +1,416 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* New French Medical Pharmacy color palette - theo chuẩn y dược Pháp */
+:root {
+  /* Primary medical blue */
+  --medical-blue: #1e6f9f;
+  --medical-blue-light: #2a8bbf;
+  --medical-blue-dark: #165a80;
+
+  /* Secondary health green */
+  --health-green: #4e8d7c;
+  --health-green-light: #5fa08e;
+  --health-green-dark: #3d7263;
+
+  /* Light mode - trắng xanh da trời, sạch, chuyên nghiệp */
+  --background: #ffffff;
+  --foreground: #1a3a5f;
+  --card: #ffffff;
+  --card-foreground: #1a3a5f;
+  --popover: #ffffff;
+  --popover-foreground: #1a3a5f;
+  --primary: #0084d4;
+  --primary-foreground: #ffffff;
+  --secondary: #e8f4f8;
+  --secondary-foreground: #1a3a5f;
+  --muted: #f0f7fb;
+  --muted-foreground: #5a7a9a;
+  --accent: #00a3e1;
+  --accent-foreground: #ffffff;
+  --destructive: #d32f2f;
+  --destructive-foreground: #ffffff;
+  --border: #d4eef5;
+  --input: #e8f4f8;
+  --ring: #0084d4;
+  --radius: 0.625rem;
+
+  /* Chart colors */
+  --chart-1: #0084d4;
+  --chart-2: #00a3e1;
+  --chart-3: #4db8e8;
+  --chart-4: #87ceeb;
+  --chart-5: #0066a8;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1a3a5f;
+  --sidebar-primary: #0084d4;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #e8f4f8;
+  --sidebar-accent-foreground: #1a3a5f;
+  --sidebar-border: #d4eef5;
+  --sidebar-ring: #0084d4;
+}
+
+/* Dark mode - xanh da trời đêm, calm, dịu mắt */
+.dark {
+  --background: #0f1a2e;
+  --foreground: #e0eef7;
+  --card: #1a2a42;
+  --card-foreground: #e0eef7;
+  --popover: #1a2a42;
+  --popover-foreground: #e0eef7;
+  --primary: #4db8e8;
+  --primary-foreground: #0f1a2e;
+  --secondary: #1a3a52;
+  --secondary-foreground: #e0eef7;
+  --muted: #1a3a52;
+  --muted-foreground: #87b3d4;
+  --accent: #87ceeb;
+  --accent-foreground: #0f1a2e;
+  --destructive: #ff6b6b;
+  --destructive-foreground: #ffffff;
+  --border: #2a4a62;
+  --input: #2a4a62;
+  --ring: #4db8e8;
+
+  /* Chart colors dark */
+  --chart-1: #4db8e8;
+  --chart-2: #87ceeb;
+  --chart-3: #5daae8;
+  --chart-4: #4db8e8;
+  --chart-5: #87b3d4;
+  --sidebar: #0f1a2e;
+  --sidebar-foreground: #e0eef7;
+  --sidebar-primary: #4db8e8;
+  --sidebar-primary-foreground: #0f1a2e;
+  --sidebar-accent: #1a3a52;
+  --sidebar-accent-foreground: #e0eef7;
+  --sidebar-border: #2a4a62;
+  --sidebar-ring: var(--sidebar-ring);
+}
+
+@theme inline {
+  --font-sans: "Inter", "Inter Fallback", system-ui, sans-serif;
+  --font-serif: "Playfair Display", "Playfair Display Fallback", Georgia, serif;
+  --font-mono: "Roboto Mono", "Roboto Mono Fallback", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Custom medical palette tokens */
+  --color-medical-blue: var(--medical-blue);
+  --color-medical-blue-light: var(--medical-blue-light);
+  --color-medical-blue-dark: var(--medical-blue-dark);
+  --color-health-green: var(--health-green);
+  --color-health-green-light: var(--health-green-light);
+  --color-health-green-dark: var(--health-green-dark);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+@keyframes float-slow {
+  0%,
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+  25% {
+    transform: translateY(-8px) translateX(4px);
+  }
+  50% {
+    transform: translateY(-4px) translateX(-4px);
+  }
+  75% {
+    transform: translateY(-12px) translateX(2px);
+  }
+}
+
+@keyframes pulse-subtle {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes border-rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    border-color: currentColor;
+  }
+  51%,
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes bubble-rise {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100px) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes flask-shake {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-2deg);
+  }
+  75% {
+    transform: rotate(2deg);
+  }
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+@keyframes particle-fly {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes draw-line {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+
+@keyframes count-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation utility classes */
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+.animate-pulse-subtle {
+  animation: pulse-subtle 3s ease-in-out infinite;
+}
+.animate-typing {
+  animation: typing 3s steps(30) forwards;
+}
+.animate-blink {
+  animation: blink 1s step-end infinite;
+}
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+.animate-slide-in-left {
+  animation: slide-in-left 0.6s ease-out forwards;
+}
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s ease-out forwards;
+}
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out forwards;
+}
+
+/* Stagger delays */
+.delay-100 {
+  animation-delay: 100ms;
+}
+.delay-200 {
+  animation-delay: 200ms;
+}
+.delay-300 {
+  animation-delay: 300ms;
+}
+.delay-400 {
+  animation-delay: 400ms;
+}
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+/* Glass morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.dark .glass {
+  background: rgba(35, 45, 63, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Pill shape for skills */
+.pill-shape {
+  border-radius: 9999px;
+  padding: 0.75rem 1.5rem;
+}
+
+/* Timeline line */
+.timeline-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+  transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+  .timeline-line {
+    left: 20px;
+  }
+}
