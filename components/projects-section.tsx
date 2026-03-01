@@ -55,18 +55,7 @@ const projetsAcademiques = [
       "Projet analytique réalisé dans le cadre de la SAÉ 1.3 afin de déterminer la teneur en hydrogénocarbonate de sodium dans un produit d’hygiène bucco-dentaire. Le travail a consisté en l’élaboration d’un protocole de dosage, la mise en œuvre des méthodes physico-chimiques, l’exploitation des résultats et la communication des conclusions.",
     size: "small",
   },
-  { 
-    id: 4,
-    title: "L'intenlligence artificielle dans la gestion des risques chimiques",
-    category: "Recherche&Laboratoire",
-    image: "/Génie Chimie.png",
-    description: "Analyse de la gestion des risques chimiques à l’aide de l’intelligence artificielle dans les environnements industriels et de laboratoire..",
-    tags: ["La bibliographique", "Analyse physico-chimique","Prévention des risques","IA appliquée" ,"Sécurité au travail"],
-    date: "2025-2026",
-    fullDescription:
-      "La gestion des risques chimiques constitue un enjeu majeur dans les secteurs industriel et scientifique. L’intelligence artificielle offre aujourd’hui de nouvelles solutions pour analyser les données, anticiper les risques et améliorer les dispositifs de sécurité en laboratoire et en industrie.",
-    size: "small",
-  },
+
 ]
 
 const projetsPersonel = [
@@ -84,6 +73,19 @@ const projetsPersonel = [
     fullDescription:
       "Projet personnel liant génie chimique industriel et cosmétique. Développement d'un modèle de vision artificielle afin d'identifier des produits cosmétiques, d'extraire leur composition INCI, de classifier les ingrédients selon leur fonction formulationnelle (tensioactifs, solvants, polymères, conservateurs...) et d'évaluer la stabilité physico-chimique potentielle ainsi que la sécurité dermatologique (allergènes, toxicité, conformité réglementaire). Le projet combine IA (CNN + OCR), chimie des formulations, toxicologie cutanée et réglementation européenne.",
     size: "large",
+  },
+  {
+    id: 2,
+    title: "L'intelligence artificielle dans la gestion des risques chimiques",
+    category: "Projet personnel",
+    image: "/Génie Chimie.png",
+    lien: "l-ia-dans-la-gestion-des-risques-ch.vercel.app",
+    description: "Analyse de la gestion des risques chimiques à l'aide de l'intelligence artificielle dans les environnements industriels et de laboratoire.",
+    tags: ["La bibliographique", "Analyse physico-chimique","Prévention des risques","IA appliquée", "Sécurité au travail"],
+    date: "2025-2026",
+    fullDescription:
+      "La gestion des risques chimiques constitue un enjeu majeur dans les secteurs industriel et scientifique. L'intelligence artificielle offre aujourd'hui de nouvelles solutions pour analyser les données, anticiper les risques et améliorer les dispositifs de sécurité en laboratoire et en industrie.",
+    size: "small",
   },
 ]
 

@@ -43,7 +43,7 @@ const skillCategories = [
     color: "accent",
     skills: [
       { name: "Français (B2)", level: 80 },
-      { name: "Anglais (C1)", level: 85 },
+      { name: "Anglais (B2)", level: 85 },
       { name: "Vietnamien (natif)", level: 100 },
     ],
   },

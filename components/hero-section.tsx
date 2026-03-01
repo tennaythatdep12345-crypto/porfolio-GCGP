@@ -4,7 +4,7 @@ import { useEffect, useState, useRef } from "react"
 import { ChevronDown, FileText, Mail } from "lucide-react"
 import FloatingParticles from "./floating-particles"
 
-const subtitles = ["Futur formulateur en pharmacie passionné", "Étudiant à IUT de Bordeaux", "Futur ingénieur en formulation pharmaceutique"]
+const subtitles = ["Futur formulateur en pharmacie et dermo-cosmetique passionné", "Étudiant à IUT de Bordeaux", "Futur ingénieur en formulation pharmaceutique"]
 
 export default function HeroSection() {
   const [currentSubtitle, setCurrentSubtitle] = useState(0)
@@ -69,7 +69,7 @@ export default function HeroSection() {
             }}
           >
             <div className="w-full h-full rounded-full bg-background flex items-center justify-center overflow-hidden">
-              <img src="/professional-portrait-pharmacy-student-young-perso.jpg" alt="Photo de profil" className="w-full h-full object-cover" />
+              <img src="/ava.jpg" alt="Photo de profil" className="w-full h-full object-cover" />
             </div>
           </div>
           {/* Subtle glow */}
@@ -103,7 +103,7 @@ export default function HeroSection() {
           style={{ animationFillMode: "forwards", opacity: 0 }}
         >
           <a
-            href="#"
+            href="file:///D:/CV%20stage%20gcgp%201.pdf"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-primary/25"
           >
             <FileText size={18} />

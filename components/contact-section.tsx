@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Mail, Phone, MapPin, Send, Linkedin, Github, Twitter, CheckCircle } from "lucide-react"
 
 const socialLinks = [
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://linkedin.com/in/le-ba-khanh-hoang-a4284a3b2", label: "LinkedIn" },
   { icon: Github, href: "#", label: "GitHub" },
   { icon: Twitter, href: "#", label: "Twitter" },
 ]
